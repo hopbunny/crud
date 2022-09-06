@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$primary: #145ea8;
+
+$dark: #373737;
+
+$utilities: (
+    'height': (
+        property: 'height',
+        class: h,
+        values: (
+            25: 25%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+            auto: auto,
+            50vh: 50vh,
+        )
+    )
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+.full-height {
+    min-height: calc(100vh - 59.453px);
+}
+  
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $gray-400;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 20px;
+    border: 2px solid $gray-400;
+}
